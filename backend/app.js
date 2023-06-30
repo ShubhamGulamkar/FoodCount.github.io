@@ -24,7 +24,9 @@ mongoose
     "mongodb+srv://projectgroup:qwerty1234@cluster0.0gjckbx.mongodb.net/resident?retryWrites=true&w=majority"
   )
   .then(() => {
+    console.log(" Database Connected and Server started on port no 5000");
     app.listen(5000);
+    //console.log("Server started on port no 5000")
   })
   .catch((err) => {
     console.log(err);

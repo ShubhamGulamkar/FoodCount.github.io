@@ -31,10 +31,10 @@ export const Profile = () => {
     var type = foodtype;
 
     var jwt = sessionStorage.getItem("token");
-    if (bookingDate == "") {
+    if (bookingDate === "") {
       swal("Please select date");
       return;
-    } else if (foodtype == "") {
+    } else if (foodtype === "") {
       swal("Please select Food type");
       return;
     }
@@ -187,7 +187,7 @@ export const Profile = () => {
                                 <tr>
                                   <td>{index + 1}</td>
                                   <td>{o.date}</td>
-                                  <td>{o.type == 1 ? "Non-Veg" : "Veg"}</td>
+                                  <td>{o.type === 1 ? "Non-Veg" : "Veg"}</td>
                                 </tr>
                               );
                             })}

@@ -22,7 +22,7 @@ export const Dashboard = () => {
     var jwt = sessionStorage.getItem("token");
     let resp;
     let d = bookingDate;
-    if (bookingDate == "") {
+    if (bookingDate === "") {
       swal("Please select date");
       return;
     }
