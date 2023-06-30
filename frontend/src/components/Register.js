@@ -35,7 +35,7 @@ const Register = (props) => {
     console.log(obj);
     try {
       const resp = await axios.post(
-        "http://localhost:5000/api/users/signup",
+        "https://foodcount1.onrender.com/api/users/signup",
         obj
       );
       console.log(resp.data);
